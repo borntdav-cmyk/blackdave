@@ -82,7 +82,41 @@
         <div class="flex justify-center gap-2 mt-1">
             <button id="all-in-btn" class="bg-red-600 hover:bg-red-700 text-white px-10 py-2 rounded-lg font-black tracking-tight active:scale-95 transition">ALL IN</button>
         </div>
+    </div> 
+    <div class="flex-shrink-0 mt-2 bg-gray-900 rounded-xl border-2 border-yellow-500 overflow-hidden">
+    <div class="bg-yellow-500 py-1">
+        <h3 class="text-center font-black text-gray-900 text-xs uppercase tracking-widest">Top Daves</h3>
     </div>
+    
+    <div class="p-2 max-h-32 overflow-y-auto custom-scrollbar">
+        <table class="w-full text-xs font-bold">
+            <tbody id="leaderboard-body">
+                <tr class="border-b border-gray-800 text-yellow-400">
+                    <td class="py-1 w-8 text-center">1ST</td>
+                    <td class="py-1">Josh</td>
+                    <td class="py-1 text-right">$508,750</td>
+                </tr>
+                <tr class="border-b border-gray-800 text-gray-300">
+                    <td class="py-1 w-8 text-center">2ND</td>
+                    <td class="py-1">PLACEHOLDER_NAME_2</td>
+                    <td class="py-1 text-right">$250,000</td>
+                </tr>
+                <tr class="border-b border-gray-800 text-orange-400">
+                    <td class="py-1 w-8 text-center">3RD</td>
+                    <td class="py-1">PLACEHOLDER_NAME_3</td>
+                    <td class="py-1 text-right">$100,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    /* Styling for the scrollbar to keep it looking clean */
+    .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #1a202c; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #fbbf24; border-radius: 10px; }
+</style>
 </div>
 
 <div id="youtube-container" class="fixed top-1/2 right-5 -translate-y-1/2 w-[400px] h-[250px] bg-black rounded-xl shadow-2xl border-4 border-yellow-400 z-50" style="display:none;">
